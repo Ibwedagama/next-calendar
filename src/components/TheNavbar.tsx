@@ -1,12 +1,24 @@
+'use client'
+
 import React from 'react'
-import Link from 'next/link'
+import { HStack, Button } from '@chakra-ui/react'
+import { useRouter } from 'next/navigation'
 
 const TheNavbar = () => {
+  const router = useRouter()
   return (
     <header className="max-w-screen-sm mx-auto">
-      <nav className="flex gap-8 p-4 justify-between items-center">
-        <Link href="/full-calendar">Full Calendar</Link>
-      </nav>
+      <HStack p={8} justify="center">
+        <Button onClick={() => router.push('/full-calendar')} colorScheme="blue">
+          Full Calendar
+        </Button>
+        <Button onClick={() => router.push('/full-calendar')} colorScheme="blue">
+          Other Calendar
+        </Button>
+        <Button onClick={() => router.push('/full-calendar')} colorScheme="blue">
+          Other Calendar
+        </Button>
+      </HStack>
     </header>
   )
 }
