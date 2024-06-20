@@ -12,8 +12,8 @@ const TheNavbar = () => {
         <Button onClick={() => router.push('/full-calendar')} colorScheme="blue">
           Full Calendar
         </Button>
-        <Button onClick={() => router.push('/full-calendar')} colorScheme="blue">
-          Other Calendar
+        <Button onClick={() => router.push('/toast-calendar')} colorScheme="blue">
+          Toast Calendar
         </Button>
         <Button onClick={() => router.push('/full-calendar')} colorScheme="blue">
           Other Calendar

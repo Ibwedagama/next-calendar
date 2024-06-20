@@ -198,9 +198,31 @@ const Fullcalendar = () => {
         <Grid templateColumns="repeat(2, 1fr)" gap={4}>
           <GridItem>
             <Text>Pros</Text>
+            <VStack align="start">
+              <Text>+ Support for React</Text>
+              <Text>+ Support multiple languages</Text>
+              <Text>+ Support Drag and Drop Events</Text>
+              <Text>+ UI is quite good out of the box</Text>
+              <Text>+ Free tier include months, weeks, and time grid</Text>
+              <Text>+ Typescript support out of the box</Text>
+              <Text>+ Able to show disabled dates</Text>
+            </VStack>
           </GridItem>
           <GridItem>
             <Text>Cons</Text>
+            <VStack align="start">
+              <Text>- Limited Themes</Text>
+              <Text>- Overriding the default CSS require a lot of effort</Text>
+              <Text>- The Bootstrap 5 theme is buggy, maybe just stick to the default style</Text>
+              <Text>- The Premium plugins are pricy ($480)</Text>
+              <Text>
+                - The Docs are not bad but sometimes it is hard to find the right information
+              </Text>
+              <Text>
+                - It is a bit difficult to understand the event handling of full calendar. So it can
+                be time consuming for a newbie.
+              </Text>
+            </VStack>
           </GridItem>
         </Grid>
       </Box>
