@@ -158,6 +158,7 @@ const ToastCalendar = () => {
               <Text>+ The UI is quite good out of the box</Text>
               <Text>+ Support for React</Text>
               <Text>+ Support for Month, Week, and Time Grid view</Text>
+              <Text>+ Support Drag and Drop inside the calendar</Text>
             </VStack>
           </GridItem>
           <GridItem>
