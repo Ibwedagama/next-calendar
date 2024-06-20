@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useEffect, useRef, useState } from 'react'
+// @ts-ignore
 import Calendar from '@toast-ui/react-calendar'
 import {
   Box,
@@ -44,6 +45,7 @@ const ToastCalendar = () => {
   ])
 
   useEffect(() => {
+    // @ts-ignore
     setCalendarInstance(calendarRef?.current?.getInstance())
 
     console.log(calendarInstance)
@@ -54,14 +56,17 @@ const ToastCalendar = () => {
   }, [calendarInstance])
 
   function handleToday() {
+    // @ts-ignore
     calendarInstance?.today()
   }
 
   function handleNext() {
+    // @ts-ignore
     calendarInstance?.next()
   }
 
   function handlePrev() {
+    // @ts-ignore
     calendarInstance?.prev()
   }
 
@@ -75,6 +80,7 @@ const ToastCalendar = () => {
       category: event.category as string,
       isAllday: event.isAllday as boolean
     }
+    // @ts-ignore
     setEvents([...events, newEvent])
   }
 
